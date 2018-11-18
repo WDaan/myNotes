@@ -1,0 +1,23 @@
+
+p{
+    background-color: rgb(235, 235, 235);
+    padding : 1em;
+    border-radius: 7px;
+
+    .title{
+        font-weight: bold;
+    }   
+}
+
+mat-card{
+    margin-bottom: 0.3em;
+
+    .content{
+        background-color: rgb(234, 234, 234);
+        margin-bottom: 0em;
+    }  
+}
+
+.home_add{
+    width: 60%;
+}

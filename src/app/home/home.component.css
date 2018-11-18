@@ -1,0 +1,23 @@
+p {
+  background-color: #ebebeb;
+  padding: 1em;
+  border-radius: 7px;
+}
+
+p .title {
+  font-weight: bold;
+}
+
+mat-card {
+  margin-bottom: 0.3em;
+}
+
+mat-card .content {
+  background-color: #eaeaea;
+  margin-bottom: 0em;
+}
+
+.home_add {
+  width: 60%;
+}
+/*# sourceMappingURL=home.component.css.map */

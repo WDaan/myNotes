@@ -1,0 +1,24 @@
+{
+    "name": "myNote",
+    "displayName": "myNote",
+    "version": "1.0.0",
+    "description": "Simple note saving app",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Daan Wijns",
+    "license": "none",
+    "dependencies": {
+        "cordova-android": "^7.0.0",
+        "cordova-plugin-whitelist": "^1.3.3"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+<h1 align="center">My Notes</h1>
+<br>
+
+<p *ngFor="let n of notes; let i = index;">
+  <mat-card-title class="title top"> {{ n.Title }} </mat-card-title>
+  <br>
+  <mat-card [ngClass]="content"> {{ n.content }} </mat-card>
+</p>
+<br>
+<br>
+
+<div align="center">
+  <button class="home_add" mat-raised-button color="accent" (click)="addNewNote()">
+    Add Note</button>
+</div>

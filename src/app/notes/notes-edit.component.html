@@ -1,0 +1,16 @@
+<h2>Edit : {{data.editTitle}}</h2>
+<div mat-dialog-content>
+  <div class="example-container form">
+    <mat-form-field floatPlaceholder="never" class="input">
+      <input matInput [(ngModel)]="data.ndata.newtitle" placeholder="New Title">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="input">
+      <input matInput [(ngModel)]="data.ndata.newcontent" placeholder="New content">
+    </mat-form-field>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="" cdkFocusInitial>Save</button>
+</div>

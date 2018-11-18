@@ -1,0 +1,45 @@
+p {
+  background-color: rgb(235, 235, 235);
+  padding: 1em;
+  border-radius: 7px;
+
+  .title {
+    font-weight: bold;
+  }
+}
+
+button {
+  padding: 0em 1em;
+  font-family: montserrat;
+}
+
+.opt {
+  float: right;
+  padding: 0em 0em 0em 0em;
+
+  &:hover {
+    background-color: rgb(224, 224, 224);
+  }
+}
+
+.edit {
+  background-color: rgb(234, 234, 234);
+}
+
+.top {
+  display: inline;
+}
+
+mat-card {
+  margin-bottom: 0.3em;
+
+  .content {
+    background-color: rgb(234, 234, 234);
+    margin-bottom: 0em;
+  }
+
+}
+
+.home_add{
+    width: 60%;
+}

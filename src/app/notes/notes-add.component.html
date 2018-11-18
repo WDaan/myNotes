@@ -1,0 +1,14 @@
+<h2 align="center"> Add</h2>
+<div class="example-container form">
+  <mat-form-field floatPlaceholder="never" class="input">
+    <input matInput [(ngModel)]="data.ndata.newtitle" placeholder="Title" required>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="input">
+    <input matInput [(ngModel)]="data.ndata.newcontent" placeholder="content" required>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="" cdkFocusInitial>Save</button>
+</div>
