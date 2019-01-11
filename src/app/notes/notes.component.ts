@@ -19,7 +19,7 @@ export interface EditData {
 })
 export class NotesComponent implements OnInit {
   titleModel: string = "";
-  contentModel: string= "";
+  contentModel: string = "";
   notes: INote[] = [];
 
   constructor(private dataService: DataService, public dialog: MatDialog) {}
@@ -38,7 +38,10 @@ export class NotesComponent implements OnInit {
 
   private createNote(): void {
     if (this.noteData.newtitle !== "" && this.noteData.newcontent !== "") {
-      this.dataService.addNote(this.noteData.newtitle, this.noteData.newcontent);
+      this.dataService.addNote(
+        this.noteData.newtitle,
+        this.noteData.newcontent
+      );
       this.update();
     }
     // set the model values to '' again
@@ -66,12 +69,17 @@ export class NotesComponent implements OnInit {
     /*enkel titel*/
     if (this.noteData.newtitle !== "" && this.noteData.newcontent !== "") {
       this.dataService.editTitle(this.noteData.index, this.noteData.newtitle);
-      this.dataService.editContent(this.noteData.index, this.noteData.newcontent);
+      this.dataService.editContent(
+        this.noteData.index,
+        this.noteData.newcontent
+      );
     } else if (this.noteData.newcontent !== "") {
       /*enkel content*/
-      this.dataService.editContent(this.noteData.index, this.noteData.newcontent);
-    }
-    else if (this.noteData.newtitle !== "") {
+      this.dataService.editContent(
+        this.noteData.index,
+        this.noteData.newcontent
+      );
+    } else if (this.noteData.newtitle !== "") {
       /*enkel title*/
       this.dataService.editTitle(this.noteData.index, this.noteData.newtitle);
     }
@@ -102,13 +110,12 @@ export class NotesComponent implements OnInit {
   openAddDialog(): void {
     const dialogRef = this.dialog.open(NoteAddComponent, {
       width: "250px",
-      data: {ndata: this.noteData }
-     
+      data: {ndata: this.noteData}
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log("The add was closed");
-      
+
       this.createNote();
     });
   }
