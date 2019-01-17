@@ -1,4 +1,6 @@
 @import url(c:\Users\daanw\Documents\Programming_projects\Angular\Note\node_modules\@angular\material\prebuilt-themes\deeppurple-amber.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body,
 html {
   height: 100%;
@@ -6,7 +8,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 18px;
 }
 
