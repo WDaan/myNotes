@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~material-design-icons/iconfont/material-icons.css";
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 18px;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.3em;
+  display: grid;
+  grid-template-columns: 30% auto;
+
+  a {
+    color: white;
+  }
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.nav-title {
+  font-size: 1.5em;
+}
+
+nav ul li a  {
+  font-size: 1em !important;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 400 !important;
+}
+
+.card-content {
+  font-size: 1.2em;
+}
+
+.button-add {
+  padding: 0.3em;
+  font-size: 1.4em;
+  font-weight: normal;
+  background-color: hsl(171, 100%, 41%);
+  color: #fff;
+}
+
+
+.btn-green {
+  background-color: hsl(171, 100%, 41%);
+  color: #fff;
+}
+
+.btn-red {
+  color: #fff;
+  background-color: hsl(348, 100%, 61%);
+}

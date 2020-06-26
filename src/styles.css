@@ -1,0 +1,38 @@
+@import url(c:\Users\daanw\Documents\Programming_projects\Angular\Note\node_modules\@angular\material\prebuilt-themes\deeppurple-amber.css);
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.3em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% auto;
+  grid-template-columns: 30% auto;
+}
+
+.container a {
+  color: white;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2em;
+}
+/*# sourceMappingURL=styles.css.map */

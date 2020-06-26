@@ -1,0 +1,20 @@
+<h1 align="center">Manage Notes</h1>
+<br>
+
+<div align="center">
+  <button class="button-add" mat-raised-button (click)="addNewNote()">
+    Add Note</button>
+</div>
+<br>
+
+<div class="card" *ngFor="let n of notes; let i = index;">
+  <mat-card-title class="title top"> {{ n.Title }} </mat-card-title>
+  <button mat-raised-button class="opt remove top" (click)="deleteNote(i)">
+    X</button>
+  <button mat-raised-button class="opt edit top" (click)="editNote(i)">
+    <i class="material-icons">
+      border_color
+    </i>
+  </button>
+  <mat-card class="card-content"> {{ n.content }} </mat-card>
+</div>

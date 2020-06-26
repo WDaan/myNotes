@@ -1,0 +1,45 @@
+p {
+  background-color: #ebebeb;
+  padding: 1em;
+  border-radius: 7px;
+}
+
+p .title {
+  font-weight: bold;
+}
+
+button {
+  padding: 0em 1em;
+  font-family: montserrat;
+}
+
+.opt {
+  float: right;
+  padding: 0em 0em 0em 0em;
+}
+
+.opt:hover {
+  background-color: #e0e0e0;
+}
+
+.edit {
+  background-color: #eaeaea;
+}
+
+.top {
+  display: inline;
+}
+
+mat-card {
+  margin-bottom: 0.3em;
+}
+
+mat-card .content {
+  background-color: #eaeaea;
+  margin-bottom: 0em;
+}
+
+.home_add {
+  width: 60%;
+}
+/*# sourceMappingURL=notes.component.css.map */
