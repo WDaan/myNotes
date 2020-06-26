@@ -1,12 +1,15 @@
-<div class="card" *ngFor="let n of notes; let i = index;">
-  <div class="font-bold text-xl mb-2"> {{ n.title }} </div>
-  <p class="text-gray-700 text-base">
-    {{ n.content }}
-  </p>
-</div>
-
-
-<div align="center" class="mt-6">
+<div align="center" class="mb-6">
   <button class="button-add" mat-raised-button (click)="addNewNote()">
     Add Note</button>
+</div>
+
+<div class="grid grid-cols-1 gap-2">
+  <div class="mx-auto w-3/4 rounded overflow-hidden shadow-lg bg-white" *ngFor="let n of notes; let i = index;">
+    <div class="px-4 py-2">
+      <div class="font-bold text-gray-600 text-xl mb-2"> {{ n.Title }} </div>
+      <p class="text-gray-700 text-base">
+        {{ n.content }}
+      </p>
+    </div>
+  </div>
 </div>

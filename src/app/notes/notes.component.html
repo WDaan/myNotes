@@ -7,14 +7,19 @@
 </div>
 <br>
 
-<div class="card" *ngFor="let n of notes; let i = index;">
-  <mat-card-title class="title top"> {{ n.Title }} </mat-card-title>
-  <button mat-raised-button class="opt remove top" (click)="deleteNote(i)">
-    X</button>
-  <button mat-raised-button class="opt edit top" (click)="editNote(i)">
-    <i class="material-icons">
-      border_color
-    </i>
-  </button>
-  <mat-card class="card-content"> {{ n.content }} </mat-card>
+<div class="grid grid-cols-1 gap-2">
+  <div class="mx-auto w-3/4 rounded overflow-hidden shadow-lg bg-white" *ngFor="let n of notes; let i = index;">
+    <div class="px-6 py-4">
+      <div class="font-bold text-gray-600 text-xl mb-2"> {{ n.Title }} </div>
+      <p class="text-gray-700 text-base">
+        {{ n.content }}
+      </p>
+    </div>
+    <div class="px-6 py-4 float-right">
+      <span (click)="editNote(i)"
+        class="cursor-pointer inline-block bg-gray-200 rounded-full px-3 py-1 font-semibold text-gray-700 mr-2">edit</span>
+      <span (click)="deleteNote(i)"
+        class="cursor-pointer inline-block bg-red-500 rounded-full px-3 py-1 font-semibold text-gray-100 mr-2">delete</span>
+    </div>
+  </div>
 </div>
