@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myNotes-new": {
+    "myNotes": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/myNotes-new",
+            "outputPath": "dist/myNotes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "myNotes-new:build"
+            "browserTarget": "myNotes:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "myNotes-new:build:production"
+              "browserTarget": "myNotes:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "myNotes-new:build"
+            "browserTarget": "myNotes:build"
           }
         },
         "test": {
@@ -116,16 +116,20 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "myNotes-new:serve"
+            "devServerTarget": "myNotes:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "myNotes-new:serve:production"
+              "devServerTarget": "myNotes:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
   },
-  "defaultProject": "myNotes-new"
+  "defaultProject": "myNotes"
 }
